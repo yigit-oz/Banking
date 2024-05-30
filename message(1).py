@@ -14,7 +14,6 @@ from xgboost import XGBClassifier
 from sklearn.metrics import accuracy_score, classification_report
 
 warnings.filterwarnings('ignore')
-matplotlib inline
 df = pd.read_csv('./bank-additional.csv', delimiter=';')
 # Define ordinal encoding for education, month, and day_of_week
 ordinal_features = ["education", "month", "day_of_week"]
